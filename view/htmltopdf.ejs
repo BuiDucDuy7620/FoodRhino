@@ -1,0 +1,21 @@
+<table width="50%">
+
+    <tr>
+        <th>Name </th>
+        <th>Email </th>
+        <th>Phone </th>
+        <th>Company </th>
+    </tr>
+    <tbody>
+        <% bookADemoModel.forEach(function(data) { %>
+            <tr>
+              <td><%= data.name %></td>
+              <td><%= data.email %></td> 
+
+              <td><%= data.phone %></td> 
+              <td><%= data.company %></td> 
+            </tr>
+          <% }); %> 
+        </tbody>
+
+</table>
